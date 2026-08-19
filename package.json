@@ -1,0 +1,31 @@
+{
+  "name": "food-delivery",
+  "version": "1.0.0",
+  "description": "Food Delivery website Practice ",
+  "homepage": "https://github.com/Aadiivaishnav18/Food-Delivery#readme",
+  "bugs": {
+    "url": "https://github.com/Aadiivaishnav18/Food-Delivery/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aadiivaishnav18/Food-Delivery.git"
+  },
+  "license": "ISC",
+  "author": "Aditya Vaishnav",
+  "type": "module",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "text": "jest"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
