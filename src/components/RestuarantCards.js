@@ -1,28 +1,30 @@
 const Restruarent = ({ resData }) => {
+    const {
+        name,
+        image,
+        cuisines,
+        rating,
+        deliveryTime,
+    } = resData.data;
+
     return (
-        <>
-            {resData.map((restaurant) => {
-                const { name, image, cuisines, rating,deliveryTime } = restaurant.data;
+        <div className="res-cart">
+            <img
+                alt={name}
+                className="res-logo"
+                src={image}
+            />
 
-                return (
-                    <div key={restaurant.data.id} className="res-cart">
+            <div className="text">
+                <h3>{name}</h3>
 
-                        <img
-                            alt={name}
-                            className="res-logo"
-                            src={image}
-                        />
+                <h3>{cuisines.join(", ")}</h3>
 
-                        <div className="text">
-                            <h3>{name}</h3>
-                            <h3>{cuisines.join(", ")}</h3>
-                            <h4>⭐ {rating} | {deliveryTime}</h4>
-                        </div>
-
-                    </div>
-                );
-            })}
-        </>
+                <h4>
+                    ⭐ {rating} | {deliveryTime}
+                </h4>
+            </div>
+        </div>
     );
 };
 
