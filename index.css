@@ -157,3 +157,9 @@ body,
 .res-cart:hover {
     border: 1px solid rgb(202, 187, 187);
 }
+
+.filter_btn{
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
