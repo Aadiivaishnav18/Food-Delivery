@@ -7,7 +7,7 @@ const Body = () => {
     const [searchtext, setsearchText] = useState("");
 
     const fetchData = async () => {
-        try {
+      
             const data = await fetch(
                 "https://www.swiggy.com/dapi/restaurants/list/v5?lat=26.9124&lng=75.7873&page_type=DESKTOP_WEB_LISTING"
             );
@@ -37,10 +37,8 @@ const Body = () => {
             setListOfRestuarant(uniqueRestaurants);
             setfilterList(uniqueRestaurants);
 
-        } catch (error) {
-            console.error("Error fetching restaurants:", error);
         }
-    };
+
 
     useEffect(() => {
         fetchData();
