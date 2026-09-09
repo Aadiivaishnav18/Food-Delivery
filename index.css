@@ -83,6 +83,10 @@ body,
 .links li:hover {
     color: darksalmon;
 }
+.links  a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /* =========================
